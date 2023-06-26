@@ -42,7 +42,7 @@ jobs:
             django-admin.py startproject simple_test
             mv ../simple_detoxify simple_test
             cd simple_test
-            cp simple_test/.circleci/circle_settings.py simple_test/settings.py
+            cp simple_detoxify/.circleci/circle_settings.py simple_test/settings.py
             cp simple_test/.pylintrc .
             python manage.py migrate
             python manage.py test
@@ -89,7 +89,7 @@ jobs:
             django-admin.py startproject simple_test
             mv ../simple_detoxify simple_test
             cd simple_test
-            cp simple_test/.circleci/circle_settings.py simple_test/settings.py
+            cp simple_detoxify/.circleci/circle_settings.py simple_test/settings.py
             cp simple_test/.pylintrc .
             python manage.py migrate
             python manage.py test
@@ -136,7 +136,7 @@ jobs:
             django-admin.py startproject simple_test
             mv ../simple_detoxify simple_test
             cd simple_test
-            cp simple_test/.circleci/circle_settings.py simple_test/settings.py
+            cp simple_detoxify/.circleci/circle_settings.py simple_test/settings.py
             cp simple_test/.pylintrc .
             python manage.py migrate
             python manage.py test
