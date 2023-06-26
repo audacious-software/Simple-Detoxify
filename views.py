@@ -1,4 +1,3 @@
-import os
 import json
 
 from detoxify import Detoxify
@@ -25,7 +24,7 @@ def simple_detoxify_score(request): # pylint: disable=too-many-branches
     if content != '':
         for model in DETOXIFY_MODELS:
             model_scores = Detoxify(model).predict(content)
-
+            
             for key in model_scores:
                 model_scores[key] = float(model_scores[key])
 
