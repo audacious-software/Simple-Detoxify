@@ -43,7 +43,7 @@ jobs:
             mv ../simple_detoxify simple_test
             cd simple_test
             cp simple_detoxify/.circleci/circle_settings.py simple_test/settings.py
-            cp simple_test/.pylintrc .
+            cp simple_detoxify/.pylintrc .
             python manage.py migrate
             python manage.py test
             pylint simple_detoxify
@@ -90,7 +90,7 @@ jobs:
             mv ../simple_detoxify simple_test
             cd simple_test
             cp simple_detoxify/.circleci/circle_settings.py simple_test/settings.py
-            cp simple_test/.pylintrc .
+            cp simple_detoxify/.pylintrc .
             python manage.py migrate
             python manage.py test
             pylint simple_detoxify
@@ -137,7 +137,7 @@ jobs:
             mv ../simple_detoxify simple_test
             cd simple_test
             cp simple_detoxify/.circleci/circle_settings.py simple_test/settings.py
-            cp simple_test/.pylintrc .
+            cp simple_detoxify/.pylintrc .
             python manage.py migrate
             python manage.py test
             pylint simple_detoxify
